@@ -178,8 +178,8 @@ h1, h2, h3 { line-height: 1.1; }
 }
 
 .hero-avatar {
-  width: clamp(110px, 13vw, 168px);
-  height: clamp(110px, 13vw, 168px);
+  width: clamp(132px, 15vw, 196px);
+  height: clamp(132px, 15vw, 196px);
   border-radius: 50%;
   background: rgba(255,255,255,.07);
   border: 3px solid rgba(255,255,255,.14);
@@ -189,6 +189,7 @@ h1, h2, h3 { line-height: 1.1; }
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  cursor: zoom-in;
   transition: transform .35s, box-shadow .35s;
 }
 

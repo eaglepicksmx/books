@@ -316,7 +316,17 @@ document.querySelectorAll('#contact-link, #nav-contact').forEach(el => {
 // Avatar
 const avatarEl = document.querySelector('[data-profile-avatar]');
 if (avatarEl && profile.image) {
+  avatarEl.setAttribute('role', 'button');
+  avatarEl.setAttribute('tabindex', '0');
+  avatarEl.setAttribute('aria-label', `Ampliar foto de ${profile.name}`);
   avatarEl.innerHTML = `<img src="${escHtml(profile.image)}" alt="Foto de ${escHtml(profile.name)}" />`;
+  avatarEl.addEventListener('click', () => openLightbox(profile.image, `Foto de ${profile.name}`));
+  avatarEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openLightbox(profile.image, `Foto de ${profile.name}`);
+    }
+  });
 }
 
 /* =========================================================
