@@ -304,6 +304,13 @@ h1, h2, h3 { line-height: 1.1; }
 
 .section-header { margin-bottom: 56px; }
 
+.section-header--split {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .section-eyebrow {
   display: inline-block;
   font-size: 0.72rem;
@@ -334,6 +341,30 @@ h1, h2, h3 { line-height: 1.1; }
 }
 
 .section--dark .section-sub { color: rgba(255,255,255,.45); }
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 14px 22px;
+  border-radius: var(--r-md);
+  background: var(--ink);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  box-shadow: var(--sh-sm);
+  transition: transform .18s, box-shadow .18s, background .18s;
+}
+
+.cv-download-btn:hover {
+  transform: translateY(-2px);
+  background: var(--navy);
+  box-shadow: var(--sh-md);
+}
 
 /* =====================================================
    PROJECT SHOWCASE LIST
@@ -971,6 +1002,10 @@ h1, h2, h3 { line-height: 1.1; }
    ===================================================== */
 @media (max-width: 860px) {
   .nav-links { display: none; }
+  .section-header--split {
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .hero-inner { flex-direction: column; text-align: center; }
   .hero-chips { justify-content: center; }
   .hero-bio { margin-left: auto; margin-right: auto; }
