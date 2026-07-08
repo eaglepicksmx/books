@@ -298,7 +298,7 @@ const IMG_PH = `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stro
    ========================================================= */
 document.title = `${profile.name} — Portafolio`;
 
-setText('[data-profile-name]',     profile.name);
+setText('[data-profile-name]',     'Victor Ortuño');
 setText('[data-profile-name2]',    profile.name);
 setText('[data-profile-name3]',    profile.name);
 setText('[data-profile-initials]', profile.initials);
