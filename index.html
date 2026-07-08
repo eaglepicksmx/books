@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Victor Ortuño — Portafolio</title>
+    <meta name="description" content="Portafolio de Victor Ortuño, diseñador gráfico especializado en branding, identidad visual y señalética." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="nav" id="top">
+      <a class="nav-brand" href="#top" aria-label="Inicio">
+        <span class="nav-initials" data-profile-initials>VO</span>
+        <span data-profile-name>Victor Ortuño</span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#instalaciones" class="nav-link">Instalaciones</a>
+        <a href="#especialidades" class="nav-link">Especialidades</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <a class="nav-cta" id="nav-contact" href="mailto:victor@merkana.club">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Contactar
+      </a>
+    </header>
+
+    <section class="hero" aria-label="Presentación">
+      <div class="hero-inner">
+        <div class="hero-avatar" data-profile-avatar>
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div class="hero-text">
+          <span class="hero-label" data-profile-label>Diseñador gráfico &amp; digital</span>
+          <h1 class="hero-name" data-profile-name2>Victor Ortuño</h1>
+          <p class="hero-bio" data-profile-bio>Ayudo a marcas y startups a resolver problemas complejos a través de estrategias visuales claras, creativas y funcionales.</p>
+          <div class="hero-chips">
+            <span class="hero-chip">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-profile-location>Poza Rica, Veracruz, México</span>
+            </span>
+            <span class="hero-chip">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z"/></svg>
+              <span data-profile-exp>6+ años de experiencia</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Ver proyectos</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </section>
+
+    <section class="section section--gray" id="proyectos" aria-labelledby="projects-heading">
+      <div class="section-inner">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">Portafolio</span>
+          <h2 id="projects-heading" class="section-title">Proyectos destacados</h2>
+          <p class="section-sub">Branding, identidad visual y señalética para marcas reales.</p>
+        </div>
+        <div class="projects-grid" data-projects-grid aria-label="Proyectos"></div>
+      </div>
+    </section>
+
+    <section class="section" id="instalaciones" aria-labelledby="carousel-heading">
+      <div class="section-inner">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">En la calle</span>
+          <h2 id="carousel-heading" class="section-title">Instalaciones &amp; Aplicaciones</h2>
+          <p class="section-sub">Registros fotográficos de anuncios luminosos, espectaculares, tótems y rotulación instalada en locales comerciales.</p>
+        </div>
+        <div class="carousel-wrapper" data-reveal>
+          <button class="carousel-control prev" id="carousel-prev" aria-label="Anterior">&larr;</button>
+          <div class="carousel-track-container">
+            <div class="carousel-track" id="carousel-track"></div>
+          </div>
+          <button class="carousel-control next" id="carousel-next" aria-label="Siguiente">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="especialidades" aria-labelledby="skills-heading">
+      <div class="section-inner">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">Habilidades</span>
+          <h2 id="skills-heading" class="section-title">Especialidades &amp; herramientas</h2>
+          <p class="section-sub">Áreas de dominio y software que uso a diario.</p>
+        </div>
+        <div class="two-col">
+          <div>
+            <p class="col-label">Disciplinas</p>
+            <div class="skills-grid" data-profile-skills aria-label="Especialidades"></div>
+          </div>
+          <div>
+            <p class="col-label">Software</p>
+            <div class="tools-grid" data-profile-tools aria-label="Herramientas"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia" aria-labelledby="exp-heading">
+      <div class="section-inner">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">Trayectoria</span>
+          <h2 id="exp-heading" class="section-title">Experiencia</h2>
+          <p class="section-sub">Puestos donde he combinado atención al cliente, producción gráfica y gestión operativa.</p>
+        </div>
+        <div class="timeline" data-profile-experience></div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contacto" aria-labelledby="contact-heading">
+      <div class="section-inner contact-inner">
+        <div data-reveal>
+          <span class="section-eyebrow">Contacto</span>
+          <h2 id="contact-heading" class="section-title">¿Trabajamos juntos?</h2>
+          <p class="section-sub">Disponible para proyectos de diseño, señalética, producción gráfica y colaboración operativa.</p>
+        </div>
+        <div class="contact-card" data-reveal>
+          <a data-profile-email href="mailto:victor@merkana.club">victor@merkana.club</a>
+          <a data-profile-whatsapp href="https://wa.me/520000000000">WhatsApp</a>
+          <a data-profile-linkedin href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" hidden>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">×</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" alt="" />
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F7F3EC"/>
+  <rect x="90" y="88" width="1020" height="724" fill="#FFFFFF" stroke="#D9D0C4" stroke-width="3"/>
+  <rect x="168" y="160" width="330" height="330" rx="165" fill="#193F47"/>
+  <text x="600" y="330" fill="#151515" font-family="Arial, sans-serif" font-size="88" font-weight="700">Marca local</text>
+  <rect x="600" y="390" width="330" height="18" fill="#B35C3E"/>
+  <rect x="600" y="442" width="420" height="18" fill="#DFD9CF"/>
+  <rect x="600" y="492" width="360" height="18" fill="#DFD9CF"/>
+  <rect x="168" y="570" width="864" height="88" fill="#EFF3F1"/>
+  <rect x="210" y="606" width="180" height="16" fill="#64724C"/>
+  <rect x="430" y="606" width="220" height="16" fill="#2F5F68"/>
+  <rect x="690" y="606" width="260" height="16" fill="#B35C3E"/>
+</svg>
