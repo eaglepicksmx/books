@@ -36,6 +36,17 @@ const profiles = {
     image:    '/img_profile_victor.jpg',
     featured: [
       {
+        category:     'Identidad digital',
+        title:        'Hacktitud 2026',
+        subtitle:     'Identidad visual, paleta y landing para hackathon juvenil',
+        image:        '/img_hacktitud_landing.png',
+        secondaryImage:'/img_hacktitud_palette.png',
+        alt:          'Landing page propuesta para Hacktitud 2026',
+        description:  'Desarrollo conceptual de una identidad para hackathon juvenil con enfoque tecnológico, creativo y educativo. La propuesta integra logotipo, símbolo H, personaje tipo alebrije tecnológico, paleta cromática y una landing informativa para registro, retos, premios y agenda.',
+        intervention: ['Sistema visual y paleta 60/30/10', 'Diseño de landing page completa', 'Jerarquía de información para evento', 'Aplicaciones para premios, retos y registro'],
+        resolves:     ['Comunicación clara de un evento juvenil tecnológico', 'Identidad memorable y diferenciada', 'Experiencia visual lista para web, cursos y materiales de apoyo']
+      },
+      {
         category:     'Señalética',
         title:        'La Pahuateca',
         subtitle:     'Fachada comercial, letras 3D y señalética integral',
@@ -347,7 +358,14 @@ if (grid) {
              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
              <span>Click para ampliar</span>
            </div>
-         </div>`
+         </div>
+         ${p.secondaryImage ? `<div class="project-img-container project-img-secondary">
+           <img src="${escHtml(p.secondaryImage)}" alt="${escHtml(p.title)} - soporte visual" loading="lazy" />
+           <div class="project-zoom-overlay">
+             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+             <span>Click para ampliar</span>
+           </div>
+         </div>` : ''}`
       : `<div class="proj-placeholder">${IMG_PH}<span>Sin imagen</span></div>`;
 
     let interventionItems = '';
@@ -394,6 +412,12 @@ if (grid) {
     if (imgContainer) {
       imgContainer.addEventListener('click', () => {
         openLightbox(p.image, p.alt || p.title);
+      });
+    }
+    const secondaryImgContainer = row.querySelector('.project-img-secondary');
+    if (secondaryImgContainer) {
+      secondaryImgContainer.addEventListener('click', () => {
+        openLightbox(p.secondaryImage, `${p.title} - soporte visual`);
       });
     }
 

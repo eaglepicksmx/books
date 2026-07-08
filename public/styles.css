@@ -484,6 +484,8 @@ h1, h2, h3 { line-height: 1.1; }
 .project-visual-col {
   flex: 1.25;
   min-width: 0;
+  display: grid;
+  gap: 14px;
 }
 
 .project-img-container {
@@ -531,6 +533,16 @@ h1, h2, h3 { line-height: 1.1; }
 
 .project-img-container:hover .project-zoom-overlay {
   opacity: 1;
+}
+
+.project-img-secondary {
+  max-width: 82%;
+  justify-self: end;
+}
+
+.project-img-secondary img {
+  aspect-ratio: 1.45;
+  object-fit: cover;
 }
 
 /* =====================================================
@@ -1068,6 +1080,10 @@ h1, h2, h3 { line-height: 1.1; }
   }
   .project-visual-col, .project-meta-col {
     width: 100%;
+  }
+  .project-img-secondary {
+    max-width: 100%;
+    justify-self: stretch;
   }
   .carousel-control { display: none; }
   .carousel-slide { flex: 0 0 280px; }
